@@ -7,7 +7,7 @@ import Umbrella
 open class AppsFlyerProvider: RuntimeProviderType {
   public let className: String = "AppsFlyerLib"
   public let instanceSelectorName: String? = "shared"
-  public let selectorName: String = "logEvent:withValues:"
+  public let selectorName: String = "logEventWithEventName:eventValues:completionHandler:"
 
   public init() {
   }

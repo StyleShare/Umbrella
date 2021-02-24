@@ -20,16 +20,6 @@ Pod::Spec.new do |s|
     ss.source_files = "Sources/Umbrella/*.swift"
   end
 
-  s.subspec "Amplitude" do |ss|
-    ss.source_files = "Sources/UmbrellaAmplitude/*.swift"
-    ss.dependency "Umbrella/Core"
-  end
-
-  s.subspec "Answers" do |ss|
-    ss.source_files = "Sources/UmbrellaAnswers/*.swift"
-    ss.dependency "Umbrella/Core"
-  end
-
   s.subspec "Appboy" do |ss|
     ss.source_files = "Sources/UmbrellaAppboy/*.swift"
     ss.dependency "Umbrella/Core"
@@ -40,38 +30,8 @@ Pod::Spec.new do |s|
     ss.dependency "Umbrella/Core"
   end
 
-  s.subspec "Facebook" do |ss|
-    ss.source_files = "Sources/UmbrellaFacebook/*.swift"
-    ss.dependency "Umbrella/Core"
-  end
-
   s.subspec "Firebase" do |ss|
     ss.source_files = "Sources/UmbrellaFirebase/*.swift"
-    ss.dependency "Umbrella/Core"
-  end
-
-  s.subspec "Flurry" do |ss|
-    ss.source_files = "Sources/UmbrellaFlurry/*.swift"
-    ss.dependency "Umbrella/Core"
-  end
-
-  s.subspec "Intercom" do |ss|
-    ss.source_files = "Sources/UmbrellaIntercom/*.swift"
-    ss.dependency "Umbrella/Core"
-  end
-
-  s.subspec "Localytics" do |ss|
-    ss.source_files = "Sources/UmbrellaLocalytics/*.swift"
-    ss.dependency "Umbrella/Core"
-  end
-
-  s.subspec "Mixpanel" do |ss|
-    ss.source_files = "Sources/UmbrellaMixpanel/*.swift"
-    ss.dependency "Umbrella/Core"
-  end
-
-  s.subspec "Segment" do |ss|
-    ss.source_files = "Sources/UmbrellaSegment/*.swift"
     ss.dependency "Umbrella/Core"
   end
 end
